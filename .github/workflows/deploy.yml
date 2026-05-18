@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Срабатывает при пуше в ветку main
+    branches: ["master"] # Срабатывает при пуше в ветку main
 
 permissions:
   contents: read
@@ -25,7 +25,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Загружаем всё содержимое текущей папки
+          path: "." # Загружаем всё содержимое текущей папки
 
       - name: Deploy to GitHub Pages
         id: deployment
