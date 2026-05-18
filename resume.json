@@ -1,134 +1,242 @@
 {
   "personal": {
-    "name": "Воловиков Георгий Александрович",
+    "name": {
+      "ru": "Воловиков Георгий Александрович",
+      "en": "George Volovikov"
+    },
     "email": "jezv@ya.ru",
     "phone": "+79246167062",
     "telegram": "@jezvGG",
     "github": "https://github.com/jezvgg",
     "photo": "ME2.jpg",
-    "quote": "Программирование для меня — это нечто большее, чем простой набор машинных команд; программирование — это искусство. Каждый программист оставляет свой уникальный почерк в решениях, которые создаются на стыке научной составляющей и бизнес-приложений. Бесчисленное множество задач еще предстоит решить, а те, которые уже решены, можно решить еще бесчисленным множеством способов."
+    "quote": {
+      "ru": "Программирование для меня — это нечто большее, чем простой набор машинных команд; программирование — это искусство. Каждый программист оставляет свой уникальный почерк в решениях, которые создаются на стыке научной составляющей и бизнес-приложений. Бесчисленное множество задач еще предстоит решить, а те, которые уже решены, можно решить еще бесчисленным множеством способов.",
+      "en": "Programming for me is more than just a set of machine commands; programming is an art. Every programmer leaves their unique signature in solutions created at the intersection of scientific components and business applications. Countless tasks are yet to be solved, and those already solved can be approached in countless other ways."
+    }
   },
   "objective": {
-    "title": "Цель",
-    "text": "участие в научно-исследовательских, образовательных и бизнес проектах, связанных с разработкой программного обеспечения, с использованием, исследованием или созданием новых методов искусственного интеллекта"
+    "title": {
+      "ru": "Цель",
+      "en": "Objective"
+    },
+    "text": {
+      "ru": "участие в научно-исследовательских, образовательных и бизнес проектах, связанных с разработкой программного обеспечения, с использованием, исследованием или созданием новых методов искусственного интеллекта",
+      "en": "participation in research, educational, and business projects related to software development, using, researching, or creating new methods of artificial intelligence"
+    }
   },
   "education": [
     {
-      "period": "2022 — наст. время",
-      "institution": "Иркутский государственный университет",
-      "program": "Бакалавриат, «Разработка программного обеспечения», направление «Прикладная информатика»"
+      "period": {
+        "ru": "2022 — наст. время",
+        "en": "2022 — Present"
+      },
+      "institution": {
+        "ru": "Иркутский государственный университет",
+        "en": "Irkutsk State University"
+      },
+      "program": {
+        "ru": "Бакалавриат, «Разработка программного обеспечения», направление «Прикладная информатика»",
+        "en": "Bachelor's degree, Software Development, Applied Informatics"
+      }
     },
     {
-      "period": "2021 — 2022",
-      "institution": "Школа искусственного интеллекта «Цифровой кентавр»",
-      "program": "Дополнительное образование, углубленное изучение методов машинного обучения"
+      "period": {
+        "ru": "2021 — 2022",
+        "en": "2021 — 2022"
+      },
+      "institution": {
+        "ru": "Школа искусственного интеллекта «Цифровой кентавр»",
+        "en": "School of Artificial Intelligence 'Digital Centaur'"
+      },
+      "program": {
+        "ru": "Дополнительное образование, углубленное изучение методов машинного обучения",
+        "en": "Additional education, advanced study of machine learning methods"
+      }
     },
     {
-      "period": "2018 — 2022",
-      "institution": "Средняя общеобразовательная школа",
-      "program": "Среднее общее образование"
+      "period": {
+        "ru": "2018 — 2022",
+        "en": "2018 — 2022"
+      },
+      "institution": {
+        "ru": "Средняя общеобразовательная школа",
+        "en": "Secondary General School"
+      },
+      "program": {
+        "ru": "Среднее общее образование",
+        "en": "Secondary General Education"
+      }
     }
   ],
   "skills": [
     {
-      "category": "Other languages",
+      "category": {
+        "ru": "Other languages",
+        "en": "Other languages"
+      },
       "items": "Python (advanced), C#, C++"
     },
     {
-      "category": "libs (ds libs)",
+      "category": {
+        "ru": "libs (ds libs)",
+        "en": "libs (ds libs)"
+      },
       "items": "numpy, opencv, sklearn, pandas, scipy, matplotlib, plotly, seaborn, PyTorch, transformers, JAX, TensorFlow, ONNX, gymnasium"
     },
     {
-      "category": "libs (web)",
+      "category": {
+        "ru": "libs (web)",
+        "en": "libs (web)"
+      },
       "items": "flask, requests, aiohttp, fastapi, lightstar, SQLAlchemy, httpx"
     },
     {
-      "category": "libs (Desktop)",
+      "category": {
+        "ru": "libs (desktop)",
+        "en": "libs (desktop)"
+      },
       "items": "flet, pyQT6, pySide6, DearPyGui"
     },
     {
-      "category": "Databases",
+      "category": {
+        "ru": "Databases",
+        "en": "Databases"
+      },
       "items": "SQLite, PostgreSQL, FAISS, Redis, Malvis, MS SQL Server, S3, Qdrant"
     }
   ],
   "projects": [
     {
-      "name": "ARNOLD Benchmark for VLA",
-      "description": "На студкемпе Яндекса при МФТИ ФПМИ занимался работой над моделью для бенчмарка ARNOLD. Именно этот проект подарил мне любовь к VLA. В ходе работы были разобраны SOTA VLA архитектуры: PrAct, CogAct, SpatialVLA, SAM2Act и GROOT N1, а также настроен пайплайн прототипирования через docker и Yandex Cloud. Были выдвинуты гипотезы по улучшению архитектуры.",
+      "name": {
+        "ru": "ARNOLD Benchmark for VLA",
+        "en": "ARNOLD Benchmark for VLA"
+      },
+      "description": {
+        "ru": "На студкемпе Яндекса при МФТИ ФПМИ занимался работой над моделью для бенчмарка ARNOLD. Именно этот проект подарил мне любовь к VLA. В ходе работы были разобраны SOTA VLA архитектуры: PrAct, CogAct, SpatialVLA, SAM2Act и GROOT N1, а также настроен пайплайн прототипирования через docker и Yandex Cloud. Были выдвинуты гипотезы по улучшению архитектуры.",
+        "en": "During the Yandex student camp at MIPT FPMI, I worked on a model for the ARNOLD benchmark. This project sparked my interest in VLA. SOTA VLA architectures (PrAct, CogAct, SpatialVLA, SAM2Act, and GROOT N1) were analyzed, and a prototyping pipeline using Docker and Yandex Cloud was established. Hypotheses for architecture improvement were proposed."
+      },
       "stack": "TensorFlow, DearPyGui"
     },
     {
-      "name": "Графический конструктор для нейросетей",
-      "description": "Desktop приложение которое позволяет без знаний программирования реализовывать полный цикл разработки нейросетей. Процесс создания выглядит как построение графа, где каждый узел имеет некоторую логику, например загрузку табличных данных. Для графической оболочки была взята библиотека DearPyGui, позволяющая быстро реализовать графовый редактор, а для нейросетей используется TensorFlow functional API из-за упрощённой сборки архитектуры и Keras из-за простого обучения. Сейчас проект поддерживает Альфабанк и он используется в НТО Джуниор по тематике \"Искусственный интеллект\"",
+      "name": {
+        "ru": "Графический конструктор для нейросетей",
+        "en": "Graphical Neural Network Constructor"
+      },
+      "description": {
+        "ru": "Desktop приложение которое позволяет без знаний программирования реализовывать полный цикл разработки нейросетей. Процесс создания выглядит как построение графа, где каждый узел имеет некоторую логику. Для графической оболочки была взята библиотека DearPyGui, а для нейросетей используется TensorFlow functional API и Keras. Сейчас проект поддерживает Альфабанк и он используется в НТО Джуниор по тематике «Искусственный интеллект».",
+        "en": "A desktop application that allows implementing a full neural network development cycle without programming knowledge. The creation process involves building a graph where each node has specific logic. DearPyGui was used for the GUI, and TensorFlow functional API and Keras for the neural networks. The project is currently supported by Alfa-Bank and used in the Junior NTO in the 'Artificial Intelligence' track."
+      },
       "stack": "TensorFlow, DearPyGui"
     },
     {
-      "name": "Сервис подбора мест и построения маршрутов по запросу на естественном языке",
-      "description": "Сайт, на котором человек может найти интересующее его место по запросу на естественном языке или по картинке найти похожие места. Также предлагает построение маршрута по запросу. Например \"Я хочу сходить в ТЦ и по пути зайти в кофейню\" и сервис предложит маршрут до кофейни и торгового центра. В проекте были 2 проблемы: громоздкость изначального решения и алгоритм для построения маршрута без обучения. В первом случае переработали пайплайн обработки данных, сохранив все данные в виде векторов в Malvis, а также переписали ruCLIP на ONNX, для уменьшения размера зависимостей и ускорения. Для построения маршрутов был придуман 2-ух этапный алгоритм. Сначала мы смотрим на косинусное расстояние между всеми объектами и запросом, строим по этим данным гистограмму. Гистограмму делим на 2 части при помощи тресхолда, интуитивно понятно, что ближайшая часть будет подходящей под запрос места. После этого мы их кластеризируем и выбираем наиболее подходящее места при помощи алгоритма экстрактивной суммаризации TextRank.",
+      "name": {
+        "ru": "Сервис подбора мест и построения маршрутов по запросу на естественном языке",
+        "en": "Natural Language Venue Selection and Routing Service"
+      },
+      "description": {
+        "ru": "Сайт для поиска мест по текстовому запросу или картинке. Предлагает построение маршрутов на основе естественного языка. Переработан пайплайн данных с использованием векторов в Malvis и ONNX версии ruCLIP. Реализован двухэтапный алгоритм кластеризации и TextRank для выбора наиболее подходящих локаций.",
+        "en": "A website for finding places via text queries or images. Offers natural language routing. The data pipeline was redesigned using vectors in Malvis and an ONNX version of ruCLIP. A two-stage clustering algorithm and TextRank were implemented to select the most relevant locations."
+      },
       "stack": "docker, CLIP, ONNX, Flask, Malvis"
     },
     {
-      "name": "Перевод консольных команд в естественный язык",
-      "description": "Стояла задача перевода запроса на естественном языке в набор shell команд. Перед созданием модели, был собран обширный датасет путём объединения данных из разных источников. Было взято несколько LLM моделей (Tiny-Llama, Mixtral) и проводились эксперименты по их тонкой настройки под задачу. Обучение проходило при ограниченных ресурсах, поэтому нужно было применить QLORA, которая позволяет тюнить модели с квантованием на лету. После этого итоговый вариант, был задеплоен на hugging face. В дальнейшем будет создана RAG система на основе векторной базы данных FAISS.",
+      "name": {
+        "ru": "Перевод консольных команд в естественный язык",
+        "en": "Console Command to Natural Language Translation"
+      },
+      "description": {
+        "ru": "Задача перевода запроса на естественном языке в shell-команды. Собран датасет из разных источников. Использовались модели Tiny-Llama и Mixtral с тонкой настройкой через QLORA. Модель задеплоена на Hugging Face.",
+        "en": "Translating natural language queries into shell commands. A dataset was compiled from various sources. Tiny-Llama and Mixtral models were used with fine-tuning via QLORA. The model is deployed on Hugging Face."
+      },
       "stack": "LLM, fine-tuning, QLORA, RAG, faiss"
     },
     {
-      "name": "Разработка образовательной программы по освоению методов машинного обучения для школьников 5-7 классов (НТО Джуниор. Сфера «Технологии и искусственный интеллект»",
-      "description": "Каждый год мы придумываем новую предысторию, задачи и направление. В прошлом году у нас был интеллектуальный чат-бот на основе DialogFlow, он рассказывал сказки с многими вариантами исходов и общался с человеком на естественном языке. Моя часть разработки обычно является самой техничной. Я придумывал задачи на DialogFlow, как их проверять, а так же рассказывал детям как им пользоваться.",
-      "stack": ""
-    },
-    {
-      "name": "Чат-бот \"Фитнесс тренер\"",
-      "description": "Чат-бот который помогает новичкам в фитнесс зале: создаёт тренировку и диеты для пользователя, подсказывает как лучше достичь результата. Ключевой особенностью этой системы была разработка фреймворка, позволяющего менять диалоги бота, без внесений изменений в код. Весь диалог выгружается из базы данных, где он храниться по факту в виде односвязного графа, благодаря чему можно создавать новые ветки диалогов, не меняя код. Кроме этого была подключена система ивентов, которая позволяет при определённом сообщении вызывать какую-либо функцию. После чего заказ был задеплоин на виртуальном сервере в кластере докеров.",
+      "name": {
+        "ru": "Чат-бот «Фитнесс тренер»",
+        "en": "'Fitness Trainer' Chatbot"
+      },
+      "description": {
+        "ru": "Чат-бот для создания тренировок и диет. Разработан фреймворк для изменения диалогов через базу данных (односвязный граф) без изменения кода. Подключена система ивентов. Деплой в Docker-кластер.",
+        "en": "A chatbot for creating workouts and diets. Developed a framework for changing dialogues via a database (linked graph) without code modifications. Implemented an event system. Deployed in a Docker cluster."
+      },
       "stack": "asyncio, aiogram, aiohttp, lightstar, SQLAlchemy, PostgreSQL, docker"
-    },
-    {
-      "name": "Разработка приложения для автоматического анализа паттернов групп социальных сетей",
-      "description": "Суть проекта заключается в том, чтоб разработать приложение, которое само будет собирать данные по социальной сети и строить дэшборды. Ключевыми особенностями проекта является его кроссплатформенность, особые методы визуализации, а так же сбор данных на основе искусственного интеллекта. Дэшборд может содержать в себе не только стандартные столбчатые или линейные графики, но и например график Венна или точечный график, отображающие пересечение интересов пользователей и кластеры самих пользователей соответственно. А с искусственными интеллектом, можно например анализировать только посты связанные с определённым запросом.",
-      "stack": "flutter (flet), vk api, sklearn, pandas"
-    },
-    {
-      "name": "Роботизация в процессах адаптации персонала: чат-бот для эффективно поддержки и консультирования сотрудников на новом рабочем месте",
-      "description": "",
-      "stack": "SQLite, Flask, DialogFlow, aiogram"
     }
   ],
   "extracurricular": [
     {
       "year": "2025",
       "activities": [
-        "Победитель КМУ 2025 в секции \"Технологии искусственного интеллекта\" с докладом \"Платформа-конструктор для проектирования нейросетей и обучения искусственному интеллекту\"",
-        "Соавтор работы на КМУ 2025 в секции \"Инновационные технологии и методы в разработке видеоигр\" с докладом \"Гибридная реальность в настольных играх: технологии создания интерактивного игрового поля для dungeons and dragons\"",
-        "Обучение на студкемпе Яндекса при МФТИ ФПМИ по тематике \"Генеративный искусственный интеллект\"",
-        "Победитель гранта АльфаШанс",
-        "Обучение на студкемпе Яндекса при ИТМО по тематике \"Анализ данных и MLOps\""
+        {
+          "ru": "Победитель КМУ 2025 в секции «Технологии искусственного интеллекта»",
+          "en": "Winner of KMU 2025 in the 'Artificial Intelligence Technologies' section"
+        },
+        {
+          "ru": "Победитель гранта АльфаШанс",
+          "en": "AlfaChance Grant Winner"
+        },
+        {
+          "ru": "Обучение на студкемпе Яндекса при ИТМО по тематике «Анализ данных и MLOps»",
+          "en": "Training at Yandex student camp at ITMO on 'Data Analysis and MLOps'"
+        }
       ]
     },
     {
       "year": "2024",
       "activities": [
-        "Финалист Национальной технологической олимпиады среди студентов, профиль «Технологии компьютерного зрения и цифровые сервисы»",
-        "Участник проектно-образовательного интенсива \"Архипелаг 2024 #Настоящее будущее\", тема «Обучение нейронной сети поиску объекта интереса»",
-        "Диплом первой степени международной научной студенческой конференции МНСК 2024 (Новосибирск), секция: «Теория и практика цифровой экономики», работа «Искусственный интеллект в поддержке новых сотрудников: разработка интеллектуального чат-бота для адаптации персонал предприятия»",
-        "Диплом третьей степени международной научной студенческой конференции МНСК 2024 (Новосибирск), секция: «Инструментальные и прикладные программные системы», работа «Приложение Behemoth: автоматизация сбора, обработки и визуализации данных о пользователях сообществ социальной сети ВКонтакте»",
-        "Призёр международной конференции \"Ляпуновские чтения\" 2024 с докладом \"Разработка веб-сервиса для анализа визуальных данных и планирования путешествий\""
+        {
+          "ru": "Финалист Национальной технологической олимпиады среди студентов, профиль «Технологии компьютерного зрения и цифровые сервисы»",
+          "en": "Finalist of the National Technology Olympiad for Students, profile 'Computer Vision Technologies and Digital Services'"
+        },
+        {
+          "ru": "Участник проектно-образовательного интенсива «Архипелаг 2024 #Настоящее будущее», тема «Обучение нейронной сети поиску объекта интереса»",
+          "en": "Participant in the project-educational intensive 'Archipelago 2024 #Real Future', topic 'Training a neural network to search for an object of interest'"
+        },
+        {
+          "ru": "Диплом первой степени международной научной студенческой конференции МНСК 2024 (Новосибирск)",
+          "en": "First-degree diploma of the International Scientific Student Conference ISSC 2024 (Novosibirsk)"
+        },
+        {
+          "ru": "Призёр международной конференции «Ляпуновские чтения» 2024 с докладом «Разработка веб-сервиса для анализа визуальных данных и планирования путешествий»",
+          "en": "Prize-winner of the international conference 'Lyapunov Readings' 2024 with the report 'Development of a web service for visual data analysis and travel planning'"
+        }
       ]
     },
     {
       "year": "2023",
       "activities": [
-        "Участник международной конференции \"Ляпуновские чтения\" 2023",
-        "Разработчик заданий сферы «Технологии и искусственный интеллект» НТО. Джуниор для школьников 5-7 классов",
-        "Наставник двух команд призёров на олимпиаде НТО по искусственному интеллекту",
-        "Призёр конкурса цифровых портфолио Талант НТО"
+        {
+          "ru": "Участник международной конференции «Ляпуновские чтения» 2023",
+          "en": "Participant in the international conference 'Lyapunov Readings' 2023"
+        },
+        {
+          "ru": "Разработчик заданий сферы «Технологии и искусственный интеллект» НТО. Джуниор для школьников 5-7 классов",
+          "en": "Developer of tasks for the 'Technologies and Artificial Intelligence' sphere of NTO. Junior for students in grades 5-7"
+        },
+        {
+          "ru": "Наставник двух команд призёров на олимпиаде НТО по искусственному интеллекту",
+          "en": "Mentor of two prize-winning teams at the NTO Olympiad in Artificial Intelligence"
+        },
+        {
+          "ru": "Призёр конкурса цифровых портфолио Талант НТО",
+          "en": "Prize-winner of the NTO Talent digital portfolio competition"
+        }
       ]
     },
     {
       "year": "2022",
       "activities": [
-        "Призёр олимпиады НТО «Технологии дополненной реальности»",
-        "Выпускник с отличием школы искусственного интеллекта \"Цифровой кентавр\"",
-        "Участник хакатона по машинному обучению SCIENCEHack"
+        {
+          "ru": "Призёр олимпиады НТО «Технологии дополненной реальности»",
+          "en": "Prize-winner of the NTO Olympiad 'Augmented Reality Technologies'"
+        },
+        {
+          "ru": "Выпускник с отличием школы искусственного интеллекта «Цифровой кентавр»",
+          "en": "Honor graduate of the School of Artificial Intelligence 'Digital Centaur'"
+        },
+        {
+          "ru": "Участник хакатона по машинному обучению SCIENCEHack",
+          "en": "Participant in the machine learning hackathon SCIENCEHack"
+        }
       ]
     }
   ]

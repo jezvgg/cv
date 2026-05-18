@@ -9,8 +9,126 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
+        <style>
+            @page {
+                margin: 0; /* Hides browser headers and footers and removes default page margins */
+            }
+            @media print {
+                body {
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+                .container,
+                .container-fluid,
+                .row,
+                .col-12 {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    height: 100% !important;
+                }
+                /* Ensure sidebar takes full height of the sheet */
+                .bg-body-tertiary {
+                    background-color: #f8f9fa !important;
+                    min-height: 29.7cm; /* Height of A4 */
+                }
+                /* Force two-column layout on paper */
+                .row {
+                    display: flex !important;
+                    flex-direction: row !important;
+                    flex-wrap: nowrap !important;
+                }
+                .col-md-4,
+                .col-lg-3 {
+                    width: 30% !important;
+                    flex: 0 0 30% !important;
+                    max-width: 30% !important;
+                    background-color: #f8f9fa !important;
+                }
+                .col-md-8,
+                .col-lg-9 {
+                    width: 70% !important;
+                    flex: 0 0 70% !important;
+                    max-width: 70% !important;
+                    background-color: white !important;
+                    padding: 1.5cm !important; /* Add padding only to the content area */
+                }
+
+                /* Ensure all text is black for maximum readability */
+                body,
+                p,
+                div,
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                li,
+                span {
+                    color: #000 !important;
+                }
+                .text-muted,
+                .text-secondary {
+                    color: #666 !important;
+                }
+
+                /* Reset shadows and rounded corners */
+                .shadow-sm,
+                .shadow-lg,
+                .shadow {
+                    box-shadow: none !important;
+                }
+                .rounded-4,
+                .overflow-hidden {
+                    border-radius: 0 !important;
+                    border: none !important;
+                }
+
+                /* Specific fixes for alerts to show backgrounds */
+                .alert-primary {
+                    background-color: #cfe2ff !important;
+                    border: none !important;
+                }
+                .alert-success {
+                    background-color: #d1e7dd !important;
+                    border: none !important;
+                }
+
+                #education-container .row {
+                    display: flex !important;
+                    flex-direction: row !important;
+                }
+
+                /* Ensure background colors are printed */
+                * {
+                    -webkit-print-color-adjust: exact !important;
+                    print-color-adjust: exact !important;
+                }
+            }
+        </style>
     </head>
     <body class="bg-light-subtle">
+        <!-- Language Switcher -->
+        <div class="container mt-3 mb-n4 d-print-none text-end">
+            <div class="btn-group shadow-sm" role="group">
+                <button
+                    type="button"
+                    onclick="switchLanguage('ru')"
+                    class="btn btn-outline-primary active"
+                    id="lang-ru"
+                >
+                    RU
+                </button>
+                <button
+                    type="button"
+                    onclick="switchLanguage('en')"
+                    class="btn btn-outline-primary"
+                    id="lang-en"
+                >
+                    EN
+                </button>
+            </div>
+        </div>
+
         <div class="container py-md-5">
             <div class="row justify-content-center">
                 <div
@@ -33,7 +151,10 @@
                             </div>
 
                             <div id="skills-section">
-                                <h4 class="fw-bold mb-3 border-bottom pb-2">
+                                <h4
+                                    id="header-skills"
+                                    class="fw-bold mb-3 border-bottom pb-2"
+                                >
                                     Навыки
                                 </h4>
                                 <div id="skills-container">
@@ -43,84 +164,95 @@
                         </div>
 
                         <!-- Right Column -->
-                        <div class="col-md-8 col-lg-9 p-4 p-md-5">
-                            <div
-                                class="d-flex justify-content-between align-items-start mb-4"
-                            >
-                                <div>
-                                    <h1
-                                        id="personal-name"
-                                        class="display-5 fw-bold mb-1"
-                                    ></h1>
-                                    <div
-                                        id="personal-contacts"
-                                        class="text-muted"
-                                    >
-                                        <!-- Contacts will be injected here -->
+                        <div class="col-md-8 col-lg-9 bg-white">
+                            <div class="p-4 p-md-5">
+                                <div
+                                    class="d-flex justify-content-between align-items-start mb-4"
+                                >
+                                    <div>
+                                        <h1
+                                            id="personal-name"
+                                            class="display-5 fw-bold mb-1"
+                                        ></h1>
+                                        <div
+                                            id="personal-contacts"
+                                            class="text-muted"
+                                        >
+                                            <!-- Contacts will be injected here -->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-5">
-                                <div
-                                    class="alert alert-success border-0 shadow-sm p-4 rounded-4"
-                                >
-                                    <p
-                                        id="personal-quote"
-                                        class="fst-italic mb-0 small text-dark"
-                                    ></p>
+                                <div class="mb-5">
+                                    <div
+                                        class="alert alert-success border-0 shadow-sm p-4 rounded-4"
+                                    >
+                                        <h4
+                                            id="header-about"
+                                            class="fw-bold mb-3 text-uppercase small text-success"
+                                        >
+                                            Обо мне
+                                        </h4>
+                                        <p
+                                            id="personal-quote"
+                                            class="mb-0 small text-dark"
+                                        ></p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Objective -->
-                            <div class="mb-5">
-                                <div
-                                    class="alert alert-primary border-0 shadow-sm p-4 rounded-4"
-                                >
-                                    <h4
-                                        id="objective-title"
-                                        class="fw-bold mb-3 text-uppercase small"
-                                    ></h4>
-                                    <p
-                                        id="objective-text"
-                                        class="lead fs-6 mb-0"
-                                    ></p>
+                                <!-- Objective -->
+                                <div class="mb-5">
+                                    <div
+                                        class="alert alert-primary border-0 shadow-sm p-4 rounded-4"
+                                    >
+                                        <h4
+                                            id="objective-title"
+                                            class="fw-bold mb-3 text-uppercase small"
+                                        ></h4>
+                                        <p
+                                            id="objective-text"
+                                            class="lead fs-6 mb-0"
+                                        ></p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Education -->
-                            <div class="mb-5">
-                                <h3
-                                    class="fw-bold border-bottom pb-2 mb-3 text-uppercase"
-                                >
-                                    Образование
-                                </h3>
-                                <div id="education-container">
-                                    <!-- Education entries will be injected here -->
+                                <!-- Education -->
+                                <div class="mb-5">
+                                    <h3
+                                        id="header-education"
+                                        class="fw-bold border-bottom pb-2 mb-3 text-uppercase"
+                                    >
+                                        Образование
+                                    </h3>
+                                    <div id="education-container">
+                                        <!-- Education entries will be injected here -->
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Projects -->
-                            <div class="mb-5">
-                                <h3
-                                    class="fw-bold border-bottom pb-2 mb-4 text-uppercase"
-                                >
-                                    Pet-проекты
-                                </h3>
-                                <div id="projects-container">
-                                    <!-- Projects will be injected here -->
+                                <!-- Projects -->
+                                <div class="mb-5">
+                                    <h3
+                                        id="header-projects"
+                                        class="fw-bold border-bottom pb-2 mb-4 text-uppercase"
+                                    >
+                                        Pet-проекты
+                                    </h3>
+                                    <div id="projects-container">
+                                        <!-- Projects will be injected here -->
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Extracurricular -->
-                            <div class="mb-5">
-                                <h3
-                                    class="fw-bold border-bottom pb-2 mb-4 text-uppercase"
-                                >
-                                    Внеучебная деятельность
-                                </h3>
-                                <div id="extracurricular-container">
-                                    <!-- Extracurricular activities will be injected here -->
+                                <!-- Extracurricular -->
+                                <div class="mb-5">
+                                    <h3
+                                        id="header-extra"
+                                        class="fw-bold border-bottom pb-2 mb-4 text-uppercase"
+                                    >
+                                        Внеучебная деятельность
+                                    </h3>
+                                    <div id="extracurricular-container">
+                                        <!-- Extracurricular activities will be injected here -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,5 +265,32 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Custom Script -->
         <script src="script.js"></script>
+
+        <!-- PDF Download Button -->
+        <div class="fixed-bottom p-4 text-end d-print-none">
+            <button
+                id="btn-download"
+                onclick="window.print()"
+                class="btn btn-primary shadow-lg rounded-pill px-4 py-2"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-file-earmark-pdf-fill me-2"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M5.523 12.424c.147 0 .241-.091.241-.245V10.5h.425c.564 0 .923.346.923.845 0 .518-.365.879-.923.879h-.668Z"
+                    />
+                    <path d="M7.5 5h5l-5-5v5z" />
+                    <path
+                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2ZM8.188 10.19c.146 0 .24-.091.24-.246V8.5h.426c.564 0 .922.346.922.845 0 .518-.366.879-.922.879h-.666V10.19Zm1.859.646.312 1.022c.126.43.232.814.328 1.202h-.108a10.723 10.723 0 0 1-.331-1.218l-.313-1.006h.412Z"
+                    />
+                </svg>
+                <span id="btn-text">Скачать PDF</span>
+            </button>
+        </div>
     </body>
 </html>
