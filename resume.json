@@ -52,20 +52,6 @@
         "ru": "Дополнительное образование, углубленное изучение методов машинного обучения",
         "en": "Additional education, advanced study of machine learning methods"
       }
-    },
-    {
-      "period": {
-        "ru": "2018 — 2022",
-        "en": "2018 — 2022"
-      },
-      "institution": {
-        "ru": "Средняя общеобразовательная школа",
-        "en": "Secondary General School"
-      },
-      "program": {
-        "ru": "Среднее общее образование",
-        "en": "Secondary General Education"
-      }
     }
   ],
   "skills": [
