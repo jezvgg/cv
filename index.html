@@ -11,27 +11,46 @@
         />
         <style>
             @page {
-                margin: 0; /* Hides browser headers and footers and removes default page margins */
+                margin: 0;
+                size: 210mm 5000px; /* Force an extremely long page to avoid breaks in Firefox */
             }
+
             @media print {
                 body {
                     padding: 0 !important;
                     margin: 0 !important;
+                    width: 210mm !important;
+                    height: auto !important;
                 }
+
+                /* Prevent breaking elements in the middle */
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                p,
+                .row,
+                .alert,
+                .mb-5 {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+
                 .container,
                 .container-fluid,
                 .row,
                 .col-12 {
                     width: 100% !important;
                     max-width: 100% !important;
-                    height: 100% !important;
+                    height: auto !important;
                 }
-                /* Ensure sidebar takes full height of the sheet */
+
                 .bg-body-tertiary {
                     background-color: #f8f9fa !important;
-                    min-height: 29.7cm; /* Height of A4 */
+                    min-height: 100% !important;
+                    height: 100% !important;
                 }
-                /* Force two-column layout on paper */
                 .row {
                     display: flex !important;
                     flex-direction: row !important;
@@ -50,10 +69,8 @@
                     flex: 0 0 70% !important;
                     max-width: 70% !important;
                     background-color: white !important;
-                    padding: 1.5cm !important; /* Add padding only to the content area */
+                    padding: 1.5cm !important;
                 }
-
-                /* Ensure all text is black for maximum readability */
                 body,
                 p,
                 div,
@@ -70,8 +87,6 @@
                 .text-secondary {
                     color: #666 !important;
                 }
-
-                /* Reset shadows and rounded corners */
                 .shadow-sm,
                 .shadow-lg,
                 .shadow {
@@ -82,8 +97,6 @@
                     border-radius: 0 !important;
                     border: none !important;
                 }
-
-                /* Specific fixes for alerts to show backgrounds */
                 .alert-primary {
                     background-color: #cfe2ff !important;
                     border: none !important;
@@ -92,13 +105,10 @@
                     background-color: #d1e7dd !important;
                     border: none !important;
                 }
-
                 #education-container .row {
                     display: flex !important;
                     flex-direction: row !important;
                 }
-
-                /* Ensure background colors are printed */
                 * {
                     -webkit-print-color-adjust: exact !important;
                     print-color-adjust: exact !important;
@@ -107,7 +117,6 @@
         </style>
     </head>
     <body class="bg-light-subtle">
-        <!-- Language Switcher -->
         <div class="container mt-3 mb-n4 d-print-none text-end">
             <div class="btn-group shadow-sm" role="group">
                 <button
@@ -135,7 +144,6 @@
                     class="col-12 col-xl-10 shadow-sm bg-white p-0 overflow-hidden rounded-4"
                 >
                     <div class="row g-0">
-                        <!-- Left Column -->
                         <div
                             class="col-md-4 col-lg-3 bg-body-tertiary border-end p-4"
                         >
@@ -149,7 +157,6 @@
                                     />
                                 </div>
                             </div>
-
                             <div id="skills-section">
                                 <h4
                                     id="header-skills"
@@ -157,13 +164,9 @@
                                 >
                                     Навыки
                                 </h4>
-                                <div id="skills-container">
-                                    <!-- Skills will be injected here -->
-                                </div>
+                                <div id="skills-container"></div>
                             </div>
                         </div>
-
-                        <!-- Right Column -->
                         <div class="col-md-8 col-lg-9 bg-white">
                             <div class="p-4 p-md-5">
                                 <div
@@ -177,12 +180,9 @@
                                         <div
                                             id="personal-contacts"
                                             class="text-muted"
-                                        >
-                                            <!-- Contacts will be injected here -->
-                                        </div>
+                                        ></div>
                                     </div>
                                 </div>
-
                                 <div class="mb-5">
                                     <div
                                         class="alert alert-success border-0 shadow-sm p-4 rounded-4"
@@ -199,8 +199,6 @@
                                         ></p>
                                     </div>
                                 </div>
-
-                                <!-- Objective -->
                                 <div class="mb-5">
                                     <div
                                         class="alert alert-primary border-0 shadow-sm p-4 rounded-4"
@@ -215,8 +213,6 @@
                                         ></p>
                                     </div>
                                 </div>
-
-                                <!-- Education -->
                                 <div class="mb-5">
                                     <h3
                                         id="header-education"
@@ -224,12 +220,8 @@
                                     >
                                         Образование
                                     </h3>
-                                    <div id="education-container">
-                                        <!-- Education entries will be injected here -->
-                                    </div>
+                                    <div id="education-container"></div>
                                 </div>
-
-                                <!-- Projects -->
                                 <div class="mb-5">
                                     <h3
                                         id="header-projects"
@@ -237,12 +229,8 @@
                                     >
                                         Pet-проекты
                                     </h3>
-                                    <div id="projects-container">
-                                        <!-- Projects will be injected here -->
-                                    </div>
+                                    <div id="projects-container"></div>
                                 </div>
-
-                                <!-- Extracurricular -->
                                 <div class="mb-5">
                                     <h3
                                         id="header-extra"
@@ -250,9 +238,7 @@
                                     >
                                         Внеучебная деятельность
                                     </h3>
-                                    <div id="extracurricular-container">
-                                        <!-- Extracurricular activities will be injected here -->
-                                    </div>
+                                    <div id="extracurricular-container"></div>
                                 </div>
                             </div>
                         </div>
@@ -261,12 +247,9 @@
             </div>
         </div>
 
-        <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Custom Script -->
         <script src="script.js"></script>
 
-        <!-- PDF Download Button -->
         <div class="fixed-bottom p-4 text-end d-print-none">
             <button
                 id="btn-download"
