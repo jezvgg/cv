@@ -167,9 +167,10 @@
         "en": "Graphical Neural Network Constructor"
       },
       "description": {
-        "ru": "Desktop приложение которое позволяет без знаний программирования реализовывать полный цикл разработки нейросетей. Процесс создания выглядит как построение графа, где каждый узел имеет некоторую логику. Для графической оболочки была взята библиотека DearPyGui, а для нейросетей используется TensorFlow functional API и Keras. Сейчас проект поддерживает Альфабанк и он используется в НТО Джуниор по тематике «Искусственный интеллект». <br> github: https://github.com/jezvgg/graphNet",
-        "en": "A desktop application that enables users to carry out the entire neural network development lifecycle without any programming knowledge. The creation process involves constructing a graph, where each node encapsulates specific logic. The DearPyGui library was selected for the graphical user interface, while the TensorFlow Functional API and Keras are utilized for the neural networks. The project is currently supported by Alfa-Bank and is employed within the NTO Junior program in Artificial Intelligence track. <br> GitHub: https://github.com/jezvgg/graphNet"
+        "ru": "Desktop приложение которое позволяет без знаний программирования реализовывать полный цикл разработки нейросетей. Процесс создания выглядит как построение графа, где каждый узел имеет некоторую логику. Для графической оболочки была взята библиотека DearPyGui, а для нейросетей используется TensorFlow functional API и Keras. Сейчас проект поддерживает Альфабанк и он используется в НТО Джуниор по тематике «Искусственный интеллект».",
+        "en": "A desktop application that enables users to carry out the entire neural network development lifecycle without any programming knowledge. The creation process involves constructing a graph, where each node encapsulates specific logic. The DearPyGui library was selected for the graphical user interface, while the TensorFlow Functional API and Keras are utilized for the neural networks. The project is currently supported by Alfa-Bank and is employed within the NTO Junior program in Artificial Intelligence track."
       },
+      "github": "https://github.com/jezvgg/graphNet",
       "stack": "TensorFlow, DearPyGui"
     },
     {
@@ -178,9 +179,10 @@
         "en": "Natural Language Venue Selection and Routing Service"
       },
       "description": {
-        "ru": "Сайт для поиска мест по текстовому запросу или картинке. Предлагает построение маршрутов на основе естественного языка. Переработан пайплайн данных с использованием векторов в Malvis и ONNX версии ruCLIP. Реализован двухэтапный алгоритм кластеризации и TextRank для выбора наиболее подходящих локаций. <br> guthub: https://github.com/jezvgg/City-Guide",
-        "en": "A website for finding places via text queries or images. Offers natural language routing. The data pipeline was redesigned using vectors in Malvis and an ONNX version of ruCLIP. A two-stage clustering algorithm and TextRank were implemented to select the most relevant locations. <br> guthub: https://github.com/jezvgg/City-Guide"
+        "ru": "Сайт для поиска мест по текстовому запросу или картинке. Предлагает построение маршрутов на основе естественного языка. Переработан пайплайн данных с использованием векторов в Malvis и ONNX версии ruCLIP. Реализован двухэтапный алгоритм кластеризации и TextRank для выбора наиболее подходящих локаций.",
+        "en": "A website for finding places via text queries or images. Offers natural language routing. The data pipeline was redesigned using vectors in Malvis and an ONNX version of ruCLIP. A two-stage clustering algorithm and TextRank were implemented to select the most relevant locations."
       },
+      "github": "https://github.com/jezvgg/City-Guide",
       "stack": "docker, CLIP, ONNX, Flask, Malvis"
     },
     {
@@ -212,9 +214,10 @@
         "en": "Meteo: calculation of an artillery salvo"
       },
       "description": {
-        "ru": "Проект написанный в ходе изучения курса по Postgres. Полностью реализован на Postgres (PLpgSQL). Делает сложные рассчёты для артелерийских залпов. <br> github: https://github.com/jezvgg/MeteoPG",
-        "en": "A project developed while studying a course on PostgreSQL. It is implemented entirely in PostgreSQL (PL/pgSQL) and performs complex calculations for artillery salvos. <br> GitHub: https://github.com/jezvgg/MeteoPG"
+        "ru": "Проект написанный в ходе изучения курса по Postgres. Полностью реализован на Postgres (PLpgSQL). Делает сложные расчёты для артиллерийского залпа.",
+        "en": "A project developed while studying a course on PostgreSQL. It is implemented entirely in PostgreSQL (PL/pgSQL) and performs complex calculations for artillery salvos."
       },
+      "github": "https://github.com/jezvgg/MeteoPG",
       "stack": "asyncio, aiogram, aiohttp, lightstar, SQLAlchemy, PostgreSQL, docker"
     }
   ],
@@ -224,7 +227,8 @@
       "activities": [
         {
           "ru": "Победитель КМУ 2025 в секции «Технологии искусственного интеллекта»",
-          "en": "Winner of KMU 2025 in the 'Artificial Intelligence Technologies' section"
+          "en": "Winner of KMU 2025 in the 'Artificial Intelligence Technologies' section",
+          "href": "https://example.com/certificate"
         },
         {
           "ru": "Победитель гранта АльфаШанс",
