@@ -2,7 +2,7 @@
   "personal": {
     "name": {
       "ru": "Воловиков Георгий Александрович",
-      "en": "George Volovikov"
+      "en": "Georgii Volovikov"
     },
     "email": "jezv@ya.ru",
     "phone": "+79246167062",
@@ -10,8 +10,8 @@
     "github": "https://github.com/jezvgg",
     "photo": "ME2.jpg",
     "quote": {
-      "ru": "Программирование для меня — это нечто большее, чем простой набор машинных команд; программирование — это искусство. Каждый программист оставляет свой уникальный почерк в решениях, которые создаются на стыке научной составляющей и бизнес-приложений. Бесчисленное множество задач еще предстоит решить, а те, которые уже решены, можно решить еще бесчисленным множеством способов.",
-      "en": "Programming for me is more than just a set of machine commands; programming is an art. Every programmer leaves their unique signature in solutions created at the intersection of scientific components and business applications. Countless tasks are yet to be solved, and those already solved can be approached in countless other ways."
+      "ru": "Программирование для меня – это нечто большее, чем простой набор машинных команд; <br>Программирование – это искусство. Каждый программист оставляет свой уникальный почерк в решениях, которые создаются на стыке научной составляющей и бизнес-приложений. Бесчисленное множество задач еще предстоит решить, а те, которые уже решены, можно решить еще бесчисленным множеством способов.",
+      "en": "For me, programming is something more than a simple set of machine instructions; <br>Programming is an art. Every programmer leaves their unique signature on the solutions created at the intersection of scientific principles and business applications. Countless tasks still await a solution, and those that have already been solved can be solved in a countless number of other ways."
     }
   },
   "objective": {
@@ -20,23 +20,23 @@
       "en": "Objective"
     },
     "text": {
-      "ru": "участие в научно-исследовательских, образовательных и бизнес проектах, связанных с разработкой программного обеспечения, с использованием, исследованием или созданием новых методов искусственного интеллекта",
-      "en": "participation in research, educational, and business projects related to software development, using, researching, or creating new methods of artificial intelligence"
+      "ru": "Участие в научно-исследовательских, образовательных и бизнес проектах, связанных с разработкой программного обеспечения, с использованием, исследованием или созданием новых методов искусственного интеллекта",
+      "en": "Participation in research, educational, and business projects related to software development, using, researching, or creating new methods of artificial intelligence"
     }
   },
   "education": [
     {
       "period": {
-        "ru": "2022 — наст. время",
-        "en": "2022 — Present"
+        "ru": "2022 — ...",
+        "en": "2022 — ..."
       },
       "institution": {
         "ru": "Иркутский государственный университет",
         "en": "Irkutsk State University"
       },
       "program": {
-        "ru": "Бакалавриат, «Разработка программного обеспечения», направление «Прикладная информатика»",
-        "en": "Bachelor's degree, Software Development, Applied Informatics"
+        "ru": "Бакалавриат, направление «Прикладная информатика: Разработка программного обеспечения»",
+        "en": "Bachelor's degree, Applied Informatics: Software Development"
       }
     },
     {
@@ -57,21 +57,65 @@
   ],
   "experience": [
     {
-      "period": { "ru": "Январь 2024 — Май 2024", "en": "Jan 2024 — May 2024" },
-      "company": { "ru": "Название компании", "en": "Company Name" },
-      "position": { "ru": "ML-разработчик", "en": "ML Developer" },
-      "description": {
-        "ru": "Занимался разработкой пайплайнов для обработки данных, обучал модели компьютерного зрения.",
-        "en": "Developed data processing pipelines, trained computer vision models."
+      "period": {
+        "ru": "04.02.26 — ...",
+        "en": "04.02.26 — ..."
       },
-      "disabled": true
+      "company": {
+        "ru": "ЦКМ МФТИ",
+        "en": "ЦКМ МФТИ"
+      },
+      "position": {
+        "ru": "Стажёр",
+        "en": "Стажёр"
+      },
+      "description": {
+        "ru": "Исследуем возможности исскуственного интеллекта, пишем статьи. Сейчас разрабатываю бенчмарк для моделей гуманойдных роботов.",
+        "en": "We explore the capabilities of artificial intelligence and write articles. Currently, I am developing a benchmark for humanoid robot models."
+      }
+    },
+    {
+      "period": {
+        "ru": "24.12.25 — 21.04.26",
+        "en": "24.12.25 — 21.04.26"
+      },
+      "company": {
+        "ru": "ЭН+ Генерация",
+        "en": "ЭН+ Генерация"
+      },
+      "position": {
+        "ru": "Middle DataScientist",
+        "en": "Middle DataScientist"
+      },
+      "description": {
+        "ru": "Разрабатывали систему централизованного сбора финансовых данных для дальнейшеё их агграгации, визуализации и анализа.",
+        "en": "We developed a system for the centralized collection of financial data, intended for subsequent aggregation, visualization, and analysis."
+      }
+    },
+    {
+      "period": {
+        "ru": "03.06.25 — 22.11.25",
+        "en": "03.06.25 — 22.11.25"
+      },
+      "company": {
+        "ru": "Полюс НТ",
+        "en": "Polus NT"
+      },
+      "position": {
+        "ru": "C# Разработчик",
+        "en": "C# Developer"
+      },
+      "description": {
+        "ru": "Разрабатывали симулятор химического завода. Я отвечал за основную архетиктуру моделей химических установок, а также продумывал, рассчитывал и реализовывал сами установки.",
+        "en": "We were developing a chemical plant simulator. I was responsible for the core architecture of the chemical unit models, as well as for designing, calculating, and implementing the units themselves."
+      }
     }
   ],
   "skills": [
     {
       "category": {
-        "ru": "Other languages",
-        "en": "Other languages"
+        "ru": "Языки программирования",
+        "en": "Programming languages"
       },
       "items": "Python (advanced), C#, C++"
     },
@@ -98,7 +142,7 @@
     },
     {
       "category": {
-        "ru": "Databases",
+        "ru": "Базы данных",
         "en": "Databases"
       },
       "items": "SQLite, PostgreSQL, FAISS, Redis, Malvis, MS SQL Server, S3, Qdrant"
@@ -107,14 +151,15 @@
   "projects": [
     {
       "name": {
-        "ru": "ARNOLD Benchmark for VLA",
-        "en": "ARNOLD Benchmark for VLA"
+        "ru": "Solution for ARNOLD Benchmark",
+        "en": "Solution for ARNOLD Benchmark"
       },
       "description": {
         "ru": "На студкемпе Яндекса при МФТИ ФПМИ занимался работой над моделью для бенчмарка ARNOLD. Именно этот проект подарил мне любовь к VLA. В ходе работы были разобраны SOTA VLA архитектуры: PrAct, CogAct, SpatialVLA, SAM2Act и GROOT N1, а также настроен пайплайн прототипирования через docker и Yandex Cloud. Были выдвинуты гипотезы по улучшению архитектуры.",
         "en": "During the Yandex student camp at MIPT FPMI, I worked on a model for the ARNOLD benchmark. This project sparked my interest in VLA. SOTA VLA architectures (PrAct, CogAct, SpatialVLA, SAM2Act, and GROOT N1) were analyzed, and a prototyping pipeline using Docker and Yandex Cloud was established. Hypotheses for architecture improvement were proposed."
       },
-      "stack": "TensorFlow, DearPyGui"
+      "stack": "gymnasium, PyTorch, VLA",
+      "disabled": true
     },
     {
       "name": {
@@ -122,8 +167,8 @@
         "en": "Graphical Neural Network Constructor"
       },
       "description": {
-        "ru": "Desktop приложение которое позволяет без знаний программирования реализовывать полный цикл разработки нейросетей. Процесс создания выглядит как построение графа, где каждый узел имеет некоторую логику. Для графической оболочки была взята библиотека DearPyGui, а для нейросетей используется TensorFlow functional API и Keras. Сейчас проект поддерживает Альфабанк и он используется в НТО Джуниор по тематике «Искусственный интеллект».",
-        "en": "A desktop application that allows implementing a full neural network development cycle without programming knowledge. The creation process involves building a graph where each node has specific logic. DearPyGui was used for the GUI, and TensorFlow functional API and Keras for the neural networks. The project is currently supported by Alfa-Bank and used in the Junior NTO in the 'Artificial Intelligence' track."
+        "ru": "Desktop приложение которое позволяет без знаний программирования реализовывать полный цикл разработки нейросетей. Процесс создания выглядит как построение графа, где каждый узел имеет некоторую логику. Для графической оболочки была взята библиотека DearPyGui, а для нейросетей используется TensorFlow functional API и Keras. Сейчас проект поддерживает Альфабанк и он используется в НТО Джуниор по тематике «Искусственный интеллект». <br> github: https://github.com/jezvgg/graphNet",
+        "en": "A desktop application that enables users to carry out the entire neural network development lifecycle without any programming knowledge. The creation process involves constructing a graph, where each node encapsulates specific logic. The DearPyGui library was selected for the graphical user interface, while the TensorFlow Functional API and Keras are utilized for the neural networks. The project is currently supported by Alfa-Bank and is employed within the NTO Junior program in Artificial Intelligence track. <br> GitHub: https://github.com/jezvgg/graphNet"
       },
       "stack": "TensorFlow, DearPyGui"
     },
@@ -133,8 +178,8 @@
         "en": "Natural Language Venue Selection and Routing Service"
       },
       "description": {
-        "ru": "Сайт для поиска мест по текстовому запросу или картинке. Предлагает построение маршрутов на основе естественного языка. Переработан пайплайн данных с использованием векторов в Malvis и ONNX версии ruCLIP. Реализован двухэтапный алгоритм кластеризации и TextRank для выбора наиболее подходящих локаций.",
-        "en": "A website for finding places via text queries or images. Offers natural language routing. The data pipeline was redesigned using vectors in Malvis and an ONNX version of ruCLIP. A two-stage clustering algorithm and TextRank were implemented to select the most relevant locations."
+        "ru": "Сайт для поиска мест по текстовому запросу или картинке. Предлагает построение маршрутов на основе естественного языка. Переработан пайплайн данных с использованием векторов в Malvis и ONNX версии ruCLIP. Реализован двухэтапный алгоритм кластеризации и TextRank для выбора наиболее подходящих локаций. <br> guthub: https://github.com/jezvgg/City-Guide",
+        "en": "A website for finding places via text queries or images. Offers natural language routing. The data pipeline was redesigned using vectors in Malvis and an ONNX version of ruCLIP. A two-stage clustering algorithm and TextRank were implemented to select the most relevant locations. <br> guthub: https://github.com/jezvgg/City-Guide"
       },
       "stack": "docker, CLIP, ONNX, Flask, Malvis"
     },
@@ -147,7 +192,8 @@
         "ru": "Задача перевода запроса на естественном языке в shell-команды. Собран датасет из разных источников. Использовались модели Tiny-Llama и Mixtral с тонкой настройкой через QLORA. Модель задеплоена на Hugging Face.",
         "en": "Translating natural language queries into shell commands. A dataset was compiled from various sources. Tiny-Llama and Mixtral models were used with fine-tuning via QLORA. The model is deployed on Hugging Face."
       },
-      "stack": "LLM, fine-tuning, QLORA, RAG, faiss"
+      "stack": "LLM, fine-tuning, QLORA, RAG, faiss",
+      "disabled": true
     },
     {
       "name": {
@@ -158,8 +204,18 @@
         "ru": "Чат-бот для создания тренировок и диет. Разработан фреймворк для изменения диалогов через базу данных (односвязный граф) без изменения кода. Подключена система ивентов. Деплой в Docker-кластер.",
         "en": "A chatbot for creating workouts and diets. Developed a framework for changing dialogues via a database (linked graph) without code modifications. Implemented an event system. Deployed in a Docker cluster."
       },
-      "stack": "asyncio, aiogram, aiohttp, lightstar, SQLAlchemy, PostgreSQL, docker",
-      "disabled": true
+      "stack": "asyncio, aiogram, aiohttp, lightstar, SQLAlchemy, PostgreSQL, docker"
+    },
+    {
+      "name": {
+        "ru": "Meteo: рассчёт артелерийского залпа",
+        "en": "Meteo: calculation of an artillery salvo"
+      },
+      "description": {
+        "ru": "Проект написанный в ходе изучения курса по Postgres. Полностью реализован на Postgres (PLpgSQL). Делает сложные рассчёты для артелерийских залпов. <br> github: https://github.com/jezvgg/MeteoPG",
+        "en": "A project developed while studying a course on PostgreSQL. It is implemented entirely in PostgreSQL (PL/pgSQL) and performs complex calculations for artillery salvos. <br> GitHub: https://github.com/jezvgg/MeteoPG"
+      },
+      "stack": "asyncio, aiogram, aiohttp, lightstar, SQLAlchemy, PostgreSQL, docker"
     }
   ],
   "extracurricular": [
