@@ -54,6 +54,17 @@
       }
     }
   ],
+  "experience": [
+    {
+      "period": { "ru": "Январь 2024 — Май 2024", "en": "Jan 2024 — May 2024" },
+      "company": { "ru": "Название компании", "en": "Company Name" },
+      "position": { "ru": "ML-разработчик", "en": "ML Developer" },
+      "description": {
+        "ru": "Занимался разработкой пайплайнов для обработки данных, обучал модели компьютерного зрения.",
+        "en": "Developed data processing pipelines, trained computer vision models."
+      }
+    }
+  ],
   "skills": [
     {
       "category": {

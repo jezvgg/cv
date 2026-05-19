@@ -42,6 +42,7 @@ function renderResume() {
     ru: {
       about: "Обо мне",
       skills: "Навыки",
+      experience: "Опыт работы",
       education: "Образование",
       projects: "Pet-проекты",
       extra: "Внеучебная деятельность",
@@ -50,6 +51,7 @@ function renderResume() {
     en: {
       about: "About Me",
       skills: "Skills",
+      experience: "Work Experience",
       education: "Education",
       projects: "Pet Projects",
       extra: "Extracurricular Activities",
@@ -59,6 +61,8 @@ function renderResume() {
 
   document.getElementById("header-about").textContent = headers[l].about;
   document.getElementById("header-skills").textContent = headers[l].skills;
+  document.getElementById("header-experience").textContent =
+    headers[l].experience;
   document.getElementById("header-education").textContent =
     headers[l].education;
   document.getElementById("header-projects").textContent = headers[l].projects;
@@ -81,6 +85,31 @@ function renderResume() {
   // Objective
   document.getElementById("objective-title").textContent = d.objective.title[l];
   document.getElementById("objective-text").innerHTML = d.objective.text[l];
+
+  // Experience
+  const experienceContainer = document.getElementById("experience-container");
+  experienceContainer.innerHTML = "";
+  if (d.experience && d.experience.length > 0) {
+    d.experience.forEach((exp) => {
+      const expDiv = document.createElement("div");
+      expDiv.className = "mb-4";
+      expDiv.innerHTML = `
+            <div class="row">
+                <div class="col-3">
+                    <div class="small text-muted fw-bold mb-1">${exp.period[l]}</div>
+                    <div class="small text-muted italic">${exp.company[l]}</div>
+                </div>
+                <div class="col-9">
+                    <div class="fw-bold text-dark mb-1">${exp.position[l]}</div>
+                    <div class="text-dark small">${exp.description[l]}</div>
+                </div>
+            </div>
+        `;
+      experienceContainer.appendChild(expDiv);
+    });
+  } else {
+    document.getElementById("header-experience").style.display = "none";
+  }
 
   // Education
   const educationContainer = document.getElementById("education-container");
