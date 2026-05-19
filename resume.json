@@ -51,7 +51,8 @@
       "program": {
         "ru": "Дополнительное образование, углубленное изучение методов машинного обучения",
         "en": "Additional education, advanced study of machine learning methods"
-      }
+      },
+      "disabled": true
     }
   ],
   "experience": [
@@ -62,7 +63,8 @@
       "description": {
         "ru": "Занимался разработкой пайплайнов для обработки данных, обучал модели компьютерного зрения.",
         "en": "Developed data processing pipelines, trained computer vision models."
-      }
+      },
+      "disabled": true
     }
   ],
   "skills": [
@@ -156,7 +158,8 @@
         "ru": "Чат-бот для создания тренировок и диет. Разработан фреймворк для изменения диалогов через базу данных (односвязный граф) без изменения кода. Подключена система ивентов. Деплой в Docker-кластер.",
         "en": "A chatbot for creating workouts and diets. Developed a framework for changing dialogues via a database (linked graph) without code modifications. Implemented an event system. Deployed in a Docker cluster."
       },
-      "stack": "asyncio, aiogram, aiohttp, lightstar, SQLAlchemy, PostgreSQL, docker"
+      "stack": "asyncio, aiogram, aiohttp, lightstar, SQLAlchemy, PostgreSQL, docker",
+      "disabled": true
     }
   ],
   "extracurricular": [

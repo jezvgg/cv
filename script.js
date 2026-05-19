@@ -93,6 +93,7 @@ function renderResume() {
     d.experience.forEach((exp) => {
       const expDiv = document.createElement("div");
       expDiv.className = "mb-4";
+      if (exp.disabled) expDiv.classList.add("item-disabled");
       expDiv.innerHTML = `
             <div class="row">
                 <div class="col-3">
@@ -117,6 +118,7 @@ function renderResume() {
   d.education.forEach((edu) => {
     const eduDiv = document.createElement("div");
     eduDiv.className = "mb-3";
+    if (edu.disabled) eduDiv.classList.add("item-disabled");
     eduDiv.innerHTML = `
             <div class="row">
                 <div class="col-3 small text-muted fw-bold">${edu.period[l]}</div>
@@ -135,6 +137,7 @@ function renderResume() {
   d.skills.forEach((skill) => {
     const skillDiv = document.createElement("div");
     skillDiv.className = "mb-3";
+    if (skill.disabled) skillDiv.classList.add("item-disabled");
     skillDiv.innerHTML = `
             <div class="fw-bold small text-uppercase text-secondary">${skill.category[l]}:</div>
             <div class="small">${skill.items}</div>
@@ -148,6 +151,7 @@ function renderResume() {
   d.projects.forEach((project) => {
     const projectDiv = document.createElement("div");
     projectDiv.className = "mb-4";
+    if (project.disabled) projectDiv.classList.add("item-disabled");
     projectDiv.innerHTML = `
             <h5 class="fw-bold mb-2">${project.name[l]}</h5>
             <p class="small text-muted mb-2">${project.description[l]}</p>
@@ -162,12 +166,14 @@ function renderResume() {
   d.extracurricular.forEach((group) => {
     const groupDiv = document.createElement("div");
     groupDiv.className = "mb-4";
+    if (group.disabled) groupDiv.classList.add("item-disabled");
 
     let activitiesHtml = '<ul class="list-unstyled ms-1">';
     group.activities.forEach((activity) => {
       const text = activity[l];
+      const isItemDisabled = activity.disabled;
       const formattedActivity = text.replace(/"([^"]+)"/g, "«$1»");
-      activitiesHtml += `<li class="mb-2 small">• ${formattedActivity}</li>`;
+      activitiesHtml += `<li class="mb-2 small ${isItemDisabled ? "item-disabled" : ""}">• ${formattedActivity}</li>`;
     });
     activitiesHtml += "</ul>";
 
